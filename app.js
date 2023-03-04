@@ -55,6 +55,7 @@ app.post("/",function(req,res)
         else
         {
             res.sendFile(__dirname+"/failure.html");
+            console.log(process.env.apiKey);
         }
         response.on("data",function(data)
         {
